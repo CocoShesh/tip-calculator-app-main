@@ -36,73 +36,82 @@
       <img src="images/logo.svg" alt="Logo" />
     </header>
     <main>
-      <section class="tip-selection">
-        <label for="bill" class="label">Bill</label> <br />
-        <input
-          type="text"
-          id="input-bill"
-          class="input-numbers"
-          placeholder="0"
-        />
-        <img src="images/icon-dollar.svg" alt="Dollar Icon" id="icon-dollar" />
-
-        <p class="label-select">Select Tip %</p>
-
-        <div class="container1">
-          <button class="column" id="tip1" onclick="handleTip1()">5%</button>
-          <button class="column" id="tip2" onclick="handleTip2()">10%</button>
-          <button class="column" id="tip3" onclick="handleTip3()">15%</button>
-        </div>
-        <div class="container2">
-          <button class="column" id="tip4" onclick="handleTip4()">25%</button>
-          <button class="column" id="tip5" onclick="handleTip5()">50%</button>
-
-          <input
-            type="text"
-            class="custom"
-            placeholder="Custom"
-            oninput="handleCustom()"
-            id="custom"
-          />
-        </div>
-        <br />
-
-        <p class="label-people">Number of People</p>
-
-        <input
-          type="text"
-          class="Number-of-people"
-          id="Number-of-people"
-          placeholder="0"
-          onclick="handleTip()"
-        />
-        <img src="images/icon-person.svg" alt="person" class="icon-person" />
-
-        <section class="viewing-totalTip">
-          <div class="tip-amount">
-            <p class="p-tipamount">
-              <span style="color: white"> Tip Amount </span><br />
-              <span class="per-person"> / Per Person </span>
-              <span class="value">
-                <img src="images/icon-dollar.svg" alt="dollar" class="dollar-sign" />
+      <section class="main-section">
+        <section class="right-content">
+          <label for="bill" class="label">Bill</label> <br />
+          <section class="bills">
+            <input
+              type="text"
+              id="input-bill"
+              class="input-numbers"
+              placeholder="0"
+            />
+            <img
+              src="images/icon-dollar.svg"
+              alt="Dollar Icon"
+              id="icon-dollar"
+            />
+          </section>
+          <p class="label-select">Select Tip %</p>
+          <div class="container1">
+            <button class="column" id="tip1" onclick="handleTip1()">5%</button>
+            <button class="column" id="tip2" onclick="handleTip2()">10%</button>
+            <button class="column" id="tip3" onclick="handleTip3()">15%</button>
+          </div>
+          <div class="container2">
+            <button class="column" id="tip4" onclick="handleTip4()">25%</button>
+            <button class="column" id="tip5" onclick="handleTip5()">50%</button>
+            <input
+              type="text"
+              class="custom"
+              placeholder="Custom"
+              oninput="handleCustom()"
+              id="custom"
+            />
+          </div>
+          <br />
+          <p class="label-people">Number of People</p>
+          <section class="tip">
+            <input
+              type="text"
+              class="Number-of-people"
+              id="Number-of-people"
+              placeholder="0"
+              onclick="handleTip()"
+            />
+            <img src="images/icon-person.svg" class="icon-person" />
+          </section>
+        </section>
+        <section class="left-content">
+          <section class="content">
+            <div class="tip-content">
+              <section class="label">
+                <span style="color: white"> Tip Amount </span><br />
+                <span class="per-person"> / Per Person </span>
+              </section>
+              <div class="value">
+                <img src="images/icon-dollar.svg" class="dollar-sign" />
                 <span id="value">0.00</span>
-              </span>
-            </p>
-          </div>
+              </div>
+            </div>
 
-          <div class="total">
-            <p class="p-total">
-              <span style="color: white"> Total </span><br />
-              <span class="per-person">/ Per Person </span>
-              <span class="value">
-                <img src="images/icon-dollar.svg" alt="dollar" class="dollar-sign" />
-                <span id="total">0.00</span>
-              </span>
-            </p>
-          </div>
-          <br />
-          <br />
-
+            <div class="total-content">
+              <section>
+                <section class="total-section">
+                  <section>
+                    <span style="color: white"> Total </span><br />
+                    <span class="per-person">/ Per Person </span>
+                  </section>
+                  <div class="value">
+                    <img src="images/icon-dollar.svg" class="dollar-sign" />
+                    <span id="total">0.00</span>
+                  </div>
+                </section>
+                <br />
+                <br />
+              </section>
+            </div>
+          </section>
           <button class="reset" onclick="handleReset()">RESET</button>
         </section>
       </section>
