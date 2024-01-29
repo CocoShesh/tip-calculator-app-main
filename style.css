@@ -208,6 +208,7 @@ main {
   .main-section {
     display: grid;
     grid-template-columns: 1fr;
+    padding-left: 1rem;
   }
   .left-content {
     padding-inline: 8px;
