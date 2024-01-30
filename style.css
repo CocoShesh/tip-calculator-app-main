@@ -205,15 +205,25 @@ main {
 }
 
 @media screen and (max-width: 713px) {
+  body {
+    margin-inline: auto;
+  }
   .main-section {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     padding-left: 1rem;
   }
-  .left-content {
-    padding-inline: 8px;
+
+  main {
+    width: 100%;
+    margin-inline: auto;
   }
   .reset {
     margin-bottom: 10px;
+  }
+  .left-content {
+    padding-inline: auto;
+    width: auto;
   }
 }
