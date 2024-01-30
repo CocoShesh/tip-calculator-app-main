@@ -223,7 +223,15 @@ main {
     margin-bottom: 10px;
   }
   .left-content {
-    padding-inline: auto;
-    width: auto;
+    padding-inline: 0;
+    width: 100%;
+  }
+  .tip-content,
+  .total-section {
+    padding-inline: 1rem;
+  }
+  .reset {
+    width: 90%;
+    margin-left: 1rem;
   }
 }
